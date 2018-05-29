@@ -1,0 +1,11 @@
+{
+  "name": "melbings/code-sniffer-test",
+  "license": "proprietary",
+  "description": "Test for a possible CodeSniffer bug",
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0"
+  },
+  "scripts": {
+    "phpcs": "vendor\\bin\\phpcbf test.php --standard=PSR2 --exclude=Generic.Files.LineLength -s --extensions=php --runtime-set severity 1"
+  }
+}
